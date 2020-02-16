@@ -17,7 +17,7 @@ export default function countWords(text) {
 
     text = text.replace(/<(.|\n)*?>/g, ' '); // strip any HTML tags
 
-    const pattern = /[a-zA-ZÀ-ÿ0-9_\u0392-\u03c9\u0410-\u04F9]+|[\u4E00-\u9FFF\u3400-\u4dbf\uf900-\ufaff\u3040-\u309f\uac00-\ud7af]+/g;
+    const pattern = /[a-zA-ZÀ-ÿ0-9_\u0392-\u03c9\u0410-\u04F9]+|[\u4E00-\u9FFF\u3400-\u4dbf\uf900-\ufaff\u3040-\u309f\uac00-\ud7af\u0900-\u097F]+/g;
     const match = text.match(pattern);
     let count = 0;
 
